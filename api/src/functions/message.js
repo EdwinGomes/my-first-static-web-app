@@ -4,9 +4,7 @@ app.http('message', {
     methods: ['GET', 'POST'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        return {
-            body: JSON.stringify({ message: "Hello, from the API!" }) // Serialize the object as JSON
-        };
+        return {body: JSON.stringify({ message: `Hello, from the API!` })};
     }
 });
 
